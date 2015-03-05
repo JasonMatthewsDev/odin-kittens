@@ -1,0 +1,6 @@
+<% @kittens.each do |kitten| %>
+    <%= content_tag :div do %>
+        <%= kitten.name %> 
+        <%= link_to 'Delete', kitten, html_options = {method: :delete} %>
+    <% end %>
+<% end %>
